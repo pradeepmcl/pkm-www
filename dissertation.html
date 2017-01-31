@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pradeep Murukannaiah, Assistant Professor, Department of Software Engineering, Rochester Institute of Technology"/>
+  <meta name="keywords" content="Pradeep Murukannaiah, Pradeep Kumar, Pradeep, Murukanaiah, pradeepmcl, pmuruka, pkm, pkmvse, rit, rochester institute of technology, ncsu, north carolina state university"/>
+  <meta name="author" content="Pradeep Murukannaiah"/>
+
+  <title>Pradeep Murukannaiah's Dissertation</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      padding-top: 70px;
+      /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+    .col-centered {
+      float: none;
+      margin: 0 auto;
+    }
+    .vcenter {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    div.row {
+      border-bottom: 1px solid #ccc;
+    }
+    .strike {
+      display: block;
+      text-align: left;
+      overflow: hidden;
+      white-space: nowrap; 
+    }
+    .strike > span {
+      position: relative;
+      display: inline-block;
+    }
+    .strike > span:before,
+    .strike > span:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 9999px;
+      height: 1px;
+      background: #ccc;
+    }
+    .strike > span:before {
+      right: 100%;
+      margin-right: 15px;
+    }
+    .strike > span:after {
+      left: 100%;
+      margin-left: 15px;
+    }
+    div.publications {
+      counter-reset: rowNumber;
+    }
+    table tr {
+      counter-increment: rowNumber;
+    }
+    table tr.journal td:first-child::before {
+      content: 'J' counter(rowNumber) ".\00A0";
+    }
+    table tr.conference td:first-child::before {
+      content: 'C' counter(rowNumber) ".\00A0";
+    }
+    table tr.invited td:first-child::before {
+      content: 'I' counter(rowNumber) ".\00A0";
+    }
+    table tr.bookchapter td:first-child::before {
+      content: 'B' counter(rowNumber) ".\00A0";
+    }
+    table tr.other td:first-child::before {
+      content: 'O' counter(rowNumber) ".\00A0";
+    }
+    table tr.dissertation td:first-child::before {
+      content: 'D' counter(rowNumber) ".\00A0";
+    }
+    table tr.paper td:first-child::before {
+      content: counter(rowNumber) ".\00A0";
+    }
+    .table-borderless tbody tr td, .table-borderless tbody tr th, .table-borderless thead tr th {
+      border: none;
+    }
+    a-plain {
+      text-decoration: none;
+    }
+  </style>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-56969241-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Pradeep Murukannaiah's Dissertation</a>
+        </div>
+      </div>
+      <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-centered publications">
+          <div>
+            <div class="pull-left">
+              <h3>Engineering personal agents: <br />Toward personalized, context-aware, and privacy-preserving applications.</h3>
+            </div>
+            <div class="pull-right">
+              <br/><h4><a href="doc/Murukannaiah+2016+NCSU+Dissertation.pdf">Dissertation Preprint</a></p></h4>
+            </div>
+            <div class="clearfix"></div>
+          </div>        
+          
+          <div class="strike">
+           <span><h4>Abstract</h4></span>
+          </div>
+
+          <p>A personal agent acts and interacts on behalf of its human user. We envision a computing infrastructure in which autonomous personal agents realize social applications similar to how human societies operate. We develop computational tools, techniques, and abstractions to engineer personal agents. Personal agents enable smart spaces ranging homes, cars, and cities with applications spanning domains such as healthcare, entertainment, energy, and transportation.</p>
+
+          <p><strong>Objectives</strong>: We seek to engineer personal agents that deliver a user- and context-specific experience, preserving their users' privacy. Engineering personal agents is challenging. On the one hand, a personal agent must capture its user’s mental model of contextual needs—a challenge centered on human cognition. On the other hand, the agent must satisfy its user's needs in an automated manner, exploiting sensor data—a challenge centered on computational devices and infrastructure. Importantly, our approaches seek to shift the loci of computation from conceptually centralized servers of today to billions of user-controlled devices.</p>
+
+          <p><strong>Methods</strong>: (1) We propose Xipho, an agent-oriented software engineering methodology for engineering personal agents. Xipho provides systematic steps to conceptualize a personal agent as a computational entity representing its user's goals, plans, contextual beliefs, and dependencies. By raising the level of abstraction, Xipho enables a developer to model and implement a personal agent close to how the developer naturally understands a user’s requirements. (2) We describe Platys, a reusable middleware that provides architectural support for realizing personal agents. The Platys middleware efficiently gathers sensor readings about a user; maps low-level sensor readings to high-level abstractions of interest via active and semi-supervised machine learning; and exposes an API to simplify the development of personal agents. Platys is privacy-preserving as it runs locally on one or more personal devices of a user. (3) We describe Muppet, a computational model that facilitates personal agents to preserve privacy in social settings, where information to be shared concerns multiple users. Muppet enables personal agents to compute an appropriate sharing policy in a multiuser scenario by exploiting the contexts, preferences, and arguments of the users involved in the scenario.</p>
+
+          <p><strong>Findings</strong>: We demonstrate that our methods benefit both software developers and end-users via four human-subject studies—two developer studies, one end-user study, and one crowd study. All of our studies were approved by our university’s Institutional Review Board (IRB).</p>
+
+          <p> Our first study, involving 46 developers, finds that Xipho (1) reduces time and effort required to model a personal agent, simplifying application development, and (2) yields agent designs easy for other developers to comprehend, simplifying application maintenance.</p>
+
+          <p> In our second study, an additional 46 developers employ the Platys middleware or Android framework to implement a personal agent. We find that Platys, compared to the Android baseline, (1) reduces development time and effort, (2) yields more modular agent implementations, and (3) enhances the usability and privacy-preserving aspects of a personal agent.</p>
+
+          <p> In our third study, 10 users employ Platys to collect sensor readings from smartphones and label contexts of their interests. From the data collected, we train Platys as well as two supervised and two unsupervised context recognition approaches. We find that Platys (1) recognizes contexts with higher accuracy than the unsupervised approaches compared with, and (2) requires fewer context labels to achieve a desired context recognition accuracy than the supervised approaches we considered, reducing the user effort required for training Platys.</p>
+
+          <p> Finally, to evaluate Muppet, we survey 988 Amazon Mechanical Turk users about a variety of multiuser scenarios and the optimal sharing policy for each scenario. Based on the participants' responses, we find that (1) contextual factors, user preferences, and arguments influence the optimal sharing policy in a multiuser scenario, and (2) employing features derived from the three types of information above, Muppet predicts the optimal sharing policy in a multiuser scenario with higher accuracy than baseline models.</p>
+
+          <div class="strike">
+            <span><h4>Refereed Journal and Conference Publications</h4></span>
+          </div>
+          <div class="table-responsive">
+            <table class="table table-borderless">
+              <tr class="paper">
+                <td class="col-md-10"><a href="doc/Murukannaiah+2017+TOCHI+MultiuserPrivacy.pdf">Sharing policies in multiuser privacy scenarios: Incorporating context, preferences, and arguments in decision making.</a> <br> R Fogues, PK Murukannaiah, J Such, and MP Singh. <em>ACM Transactions on Computer-Human Interaction</em>, In Press, 1–26, 2017.</td>
+                <td class="col-md-2 text-right"><strong>TOCHI 2017</strong></td>
+              </tr>          
+              <tr class="paper">
+                <td class="col-md-10"><a href="doc/Murukannaiah+2015+TOSEM+Platys.pdf">Platys: An active learning framework for place-aware application development and its evaluation.</a> <br>PK Murukannaiah and MP Singh. <em>ACM Transactions on Software Engineering and Methodology</em>, 24(3):1–33, 2015.</td>
+                <td class="col-md-2 text-right"><strong>TOSEM 2015</strong></td>
+              </tr>
+              <tr class="paper">
+                <td class="col-md-10"><a href="doc/Zavala+2015+AIMagazine+Platys.pdf">Platys: From position to place-oriented mobile computing.</a> <br>L Zavala, PK Murukannaiah, N Poosamani, T Finin, A Joshi, I Rhee, and MP Singh. <em>AI Magazine</em>, 36(2):50–62, 2015.</td>
+                <td class="col-md-2 text-right"><strong>AI Magazine 2015</strong></td>
+              </tr>
+              <tr class="conference">
+                <td class="col-md-10"><a href="doc/Murukannaiah+2014+AAMAS+Xipho.pdf">Xipho: Extending Tropos to engineer context-aware personal agents.</a> PK Murukannaiah and MP Singh.<br>In <em>Proceedings of the International Conference on Autonomous Agents and MultiAgent Systems</em>, 309–316, Paris, 2015.</td>
+                <td class="col-md-2 text-right"><strong>AAMAS 2014</strong></td>
+              </tr>              
+              <tr class="paper">
+                <td class="col-md-10"><a href="doc/Murukannaiah+2012+IC+PlatysSocial.pdf">Platys Social: Relating shared places and private social circles.</a> <br>PK Murukannaiah and MP Singh. <em>IEEE Internet Computing</em>, 16(3):53–59, 2012.</td>
+                <td class="col-md-2 text-right"><strong>IC 2012</strong></td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="strike">
+            <span><h4>Journal Columns</h4></span>
+          </div>
+          <div class="table-responsive">
+            <table class="table table-borderless">
+              <tr class="paper">
+                <td class="col-md-10"><a href="doc/Murukannaiah+2016+IC+Danio.pdf">Engineering privacy in social applications.</a> PK Murukannaiah, N Ajmeri, and MP Singh. <em>IEEE Internet Computing</em>, 20(2):72–76, 2016.</td>
+                <td class="col-md-2 text-right"><strong>IC 2016</strong></td>
+              </tr>
+              <tr class="paper">
+                <td class="col-md-10"><a href="doc/Murukannaiah+2014+IC+LbUX.pdf">Understanding location-based user experience.</a> PK Murukannaiah and MP Singh. <em>IEEE Internet Computing</em>, 18(6):53–59, 2014.</td>
+                <td class="col-md-2 text-right"><strong>IC 2014</strong></td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="strike">
+            <span><h4>Refereed Workshops, Demos, and Symposia</h4></span>
+          </div>
+          <div class="table-responsive">
+            <table class="table table-borderless">
+              <tr class="paper">
+                <td class="col-md-10"><a href="doc/Fogues+2015+ACySe+Privacy.pdf">Argumentation for multi-party privacy management (Position paper).</a> <br/> R Fogues, PK Murukannaiah, JM Such, A Espinosa, A Garcia-Fornes, and MP Singh. <em>International Workshop on Agents and CyberSecurity</em>, 2015.</td>
+                <td class="col-md-2 text-right"><strong>ACySe 2015</strong></td>
+              </tr>
+              <tr class="paper">
+                <td class="col-md-10"><a href="doc/Murukannaiah+2014+AAMAS+DC.pdf">Reasoning about context and engineering context-aware agents (Doctoral Consortium).</a> PK Murukannaiah.<br>In <em>Proceedings of the International Conference on Autonomous Agents and MultiAgent Systems</em>, 1733–1734, 2014</td>
+                <td class="col-md-2 text-right"><strong>AAMAS 2014</strong></td>
+              </tr>
+              <tr class="paper">
+                <td class="col-md-10"><a href="doc/Murukannaiah+2014+AAMAS+XiphoDemo.pdf">Platys: A framework for supporting context-aware personal agents (Demonstration).</a> PK Murukannaiah, R Fogues, and MP Singh.In <em>Proceedings of the International Conference on Autonomous Agents and MultiAgent Systems</em>, 1689–1690, 2014.</td>
+                <td class="col-md-2 text-right"><strong>AAMAS 2014</strong></td>
+              </tr>
+              <tr class="paper">
+                <td class="col-md-10"><a href="doc/Hang+2013+AAAIWS+Platys.pdf">Platys: User-Centric Place Recognition.</a> C-W Hang, PK Murukannaiah, and MP Singh.<br><em>AAAI Workshop on Activity Context-Aware System Architectures</em>, 2013</td>
+                <td class="col-md-2 text-right"><strong>AAAI WS 2013</strong></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+
+  </html>
