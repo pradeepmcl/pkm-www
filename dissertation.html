@@ -129,7 +129,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 col-centered publications">
-          <div>
+          <!--<div>
             <div class="pull-left">
               <h3>Engineering personal agents: <br />Toward personalized, context-aware, and privacy-preserving applications.</h3>
             </div>
@@ -137,27 +137,11 @@
               <br/><h4><a href="doc/Murukannaiah+2016+NCSU+Dissertation.pdf">Dissertation Preprint</a></p></h4>
             </div>
             <div class="clearfix"></div>
-          </div>        
-          
-          <div class="strike">
-           <span><h4>Abstract</h4></span>
-          </div>
+          </div>-->
 
-          <p>A personal agent acts and interacts on behalf of its human user. We envision a computing infrastructure in which autonomous personal agents realize social applications similar to how human societies operate. We develop computational tools, techniques, and abstractions to engineer personal agents. Personal agents enable smart spaces ranging homes, cars, and cities with applications spanning domains such as healthcare, entertainment, energy, and transportation.</p>
+         <h3 align="center">Engineering personal agents: <br />Toward personalized, context-aware, and privacy-preserving applications.</h3>
 
-          <p><strong>Objectives</strong>: We seek to engineer personal agents that deliver a user- and context-specific experience, preserving their users' privacy. Engineering personal agents is challenging. On the one hand, a personal agent must capture its user’s mental model of contextual needs—a challenge centered on human cognition. On the other hand, the agent must satisfy its user's needs in an automated manner, exploiting sensor data—a challenge centered on computational devices and infrastructure. Importantly, our approaches seek to shift the loci of computation from conceptually centralized servers of today to billions of user-controlled devices.</p>
-
-          <p><strong>Methods</strong>: (1) We propose Xipho, an agent-oriented software engineering methodology for engineering personal agents. Xipho provides systematic steps to conceptualize a personal agent as a computational entity representing its user's goals, plans, contextual beliefs, and dependencies. By raising the level of abstraction, Xipho enables a developer to model and implement a personal agent close to how the developer naturally understands a user’s requirements. (2) We describe Platys, a reusable middleware that provides architectural support for realizing personal agents. The Platys middleware efficiently gathers sensor readings about a user; maps low-level sensor readings to high-level abstractions of interest via active and semi-supervised machine learning; and exposes an API to simplify the development of personal agents. Platys is privacy-preserving as it runs locally on one or more personal devices of a user. (3) We describe Muppet, a computational model that facilitates personal agents to preserve privacy in social settings, where information to be shared concerns multiple users. Muppet enables personal agents to compute an appropriate sharing policy in a multiuser scenario by exploiting the contexts, preferences, and arguments of the users involved in the scenario.</p>
-
-          <p><strong>Findings</strong>: We demonstrate that our methods benefit both software developers and end-users via four human-subject studies—two developer studies, one end-user study, and one crowd study. All of our studies were approved by our university’s Institutional Review Board (IRB).</p>
-
-          <p> Our first study, involving 46 developers, finds that Xipho (1) reduces time and effort required to model a personal agent, simplifying application development, and (2) yields agent designs easy for other developers to comprehend, simplifying application maintenance.</p>
-
-          <p> In our second study, an additional 46 developers employ the Platys middleware or Android framework to implement a personal agent. We find that Platys, compared to the Android baseline, (1) reduces development time and effort, (2) yields more modular agent implementations, and (3) enhances the usability and privacy-preserving aspects of a personal agent.</p>
-
-          <p> In our third study, 10 users employ Platys to collect sensor readings from smartphones and label contexts of their interests. From the data collected, we train Platys as well as two supervised and two unsupervised context recognition approaches. We find that Platys (1) recognizes contexts with higher accuracy than the unsupervised approaches compared with, and (2) requires fewer context labels to achieve a desired context recognition accuracy than the supervised approaches we considered, reducing the user effort required for training Platys.</p>
-
-          <p> Finally, to evaluate Muppet, we survey 988 Amazon Mechanical Turk users about a variety of multiuser scenarios and the optimal sharing policy for each scenario. Based on the participants' responses, we find that (1) contextual factors, user preferences, and arguments influence the optimal sharing policy in a multiuser scenario, and (2) employing features derived from the three types of information above, Muppet predicts the optimal sharing policy in a multiuser scenario with higher accuracy than baseline models.</p>
+         <h3 align="center"><a href="doc/Murukannaiah+2016+NCSU+Dissertation.pdf">Dissertation</a></p></h3>
 
           <div class="strike">
             <span><h4>Refereed Journal and Conference Publications</h4></span>
@@ -226,6 +210,26 @@
               </tr>
             </table>
           </div>
+
+          <div class="strike">
+           <span><h4>Abstract</h4></span>
+          </div>
+
+          <p>A personal agent acts and interacts on behalf of its human user. We envision a computing infrastructure in which autonomous personal agents realize social applications similar to how human societies operate. We develop computational tools, techniques, and abstractions to engineer personal agents. Personal agents enable smart spaces ranging homes, cars, and cities with applications spanning domains such as healthcare, entertainment, energy, and transportation.</p>
+
+          <p><strong>Objectives</strong>: We seek to engineer personal agents that deliver a user- and context-specific experience, preserving their users' privacy. Engineering personal agents is challenging. On the one hand, a personal agent must capture its user’s mental model of contextual needs—a challenge centered on human cognition. On the other hand, the agent must satisfy its user's needs in an automated manner, exploiting sensor data—a challenge centered on computational devices and infrastructure. Importantly, our approaches seek to shift the loci of computation from conceptually centralized servers of today to billions of user-controlled devices.</p>
+
+          <p><strong>Methods</strong>: (1) We propose Xipho, an agent-oriented software engineering methodology for engineering personal agents. Xipho provides systematic steps to conceptualize a personal agent as a computational entity representing its user's goals, plans, contextual beliefs, and dependencies. By raising the level of abstraction, Xipho enables a developer to model and implement a personal agent close to how the developer naturally understands a user’s requirements. (2) We describe Platys, a reusable middleware that provides architectural support for realizing personal agents. The Platys middleware efficiently gathers sensor readings about a user; maps low-level sensor readings to high-level abstractions of interest via active and semi-supervised machine learning; and exposes an API to simplify the development of personal agents. Platys is privacy-preserving as it runs locally on one or more personal devices of a user. (3) We describe Muppet, a computational model that facilitates personal agents to preserve privacy in social settings, where information to be shared concerns multiple users. Muppet enables personal agents to compute an appropriate sharing policy in a multiuser scenario by exploiting the contexts, preferences, and arguments of the users involved in the scenario.</p>
+
+          <p><strong>Findings</strong>: We demonstrate that our methods benefit both software developers and end-users via four human-subject studies—two developer studies, one end-user study, and one crowd study. All of our studies were approved by our university’s Institutional Review Board (IRB).</p>
+
+          <p> Our first study, involving 46 developers, finds that Xipho (1) reduces time and effort required to model a personal agent, simplifying application development, and (2) yields agent designs easy for other developers to comprehend, simplifying application maintenance.</p>
+
+          <p> In our second study, an additional 46 developers employ the Platys middleware or Android framework to implement a personal agent. We find that Platys, compared to the Android baseline, (1) reduces development time and effort, (2) yields more modular agent implementations, and (3) enhances the usability and privacy-preserving aspects of a personal agent.</p>
+
+          <p> In our third study, 10 users employ Platys to collect sensor readings from smartphones and label contexts of their interests. From the data collected, we train Platys as well as two supervised and two unsupervised context recognition approaches. We find that Platys (1) recognizes contexts with higher accuracy than the unsupervised approaches compared with, and (2) requires fewer context labels to achieve a desired context recognition accuracy than the supervised approaches we considered, reducing the user effort required for training Platys.</p>
+
+          <p> Finally, to evaluate Muppet, we survey 988 Amazon Mechanical Turk users about a variety of multiuser scenarios and the optimal sharing policy for each scenario. Based on the participants' responses, we find that (1) contextual factors, user preferences, and arguments influence the optimal sharing policy in a multiuser scenario, and (2) employing features derived from the three types of information above, Muppet predicts the optimal sharing policy in a multiuser scenario with higher accuracy than baseline models.</p>          
         </div>
       </div>
     </div>
