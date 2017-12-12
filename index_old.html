@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pradeep Murukannaiah, Assistant Professor, Department of Software Engineering, Rochester Institute of Technology"/>
+  <meta name="keywords" content="Pradeep Murukannaiah, Pradeep Kumar, Pradeep, Murukanaiah, pradeepmcl, pmuruka, pkm, pkmvse, rit, rochester institute of technology, ncsu, north carolina state university"/>
+  <meta name="author" content="Pradeep Murukannaiah"/>
+
+  <title>Pradeep Kumar Murukannaiah</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      padding-top: 70px;
+      /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+    .col-centered {
+      float: none;
+      margin: 0 auto;
+    }
+    .vcenter {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    div.row {
+      border-bottom: 1px solid #ccc;
+    }
+    .strike {
+      display: block;
+      text-align: left;
+      overflow: hidden;
+      white-space: nowrap; 
+    }
+    .strike > span {
+      position: relative;
+      display: inline-block;
+    }
+    .strike > span:before,
+    .strike > span:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 9999px;
+      height: 1px;
+      background: #ccc;
+    }
+    .strike > span:before {
+      right: 100%;
+      margin-right: 15px;
+    }
+    .strike > span:after {
+      left: 100%;
+      margin-left: 15px;
+    }
+    div.publications {
+      counter-reset: rowNumber;
+    }
+    table tr {
+      counter-increment: rowNumber;
+    }
+    table tr.journal td:first-child::before {
+      content: 'J' counter(rowNumber) ".\00A0";
+    }
+    table tr.conference td:first-child::before {
+      content: 'C' counter(rowNumber) ".\00A0";
+    }
+    table tr.invited td:first-child::before {
+      content: 'I' counter(rowNumber) ".\00A0";
+    }
+    table tr.bookchapter td:first-child::before {
+      content: 'B' counter(rowNumber) ".\00A0";
+    }
+    table tr.other td:first-child::before {
+      content: 'O' counter(rowNumber) ".\00A0";
+    }
+    table tr.dissertation td:first-child::before {
+      content: 'D' counter(rowNumber) ".\00A0";
+    }
+    .table-borderless tbody tr td, .table-borderless tbody tr th, .table-borderless thead tr th {
+      border: none;
+    }
+    a-plain {
+      text-decoration: none;
+    }
+  </style>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-56969241-2', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Pradeep Murukannaiah</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="#research">Research</a>
+            </li>
+            </li>
+            <li>
+              <a href="#awards">Awards</a>
+            </li>
+            <li>
+              <a href="#teaching">Teaching</a>
+            </li>
+            <li>
+              <a href="#service">Service</a>
+            </li>
+            <li class="hidden-xl hidden-lg hidden-md">
+              <a href="doc/Murukannaiah-CV.pdf">CV</a>
+            <li class="hidden-xl hidden-lg hidden-md hidden-xs">
+              <a href="mailto:pkmvse at rit dot edu">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-centered">
+          <div class="col-md-2 col-sm-3 col-xs-4">
+            <div class="thumbnail">
+              <img src="pic/PKM-1-Small.png" alt="Pradeep Murukannaiah's picture">
+            </div>
+          </div>
+          <div class="col-xs-7 hidden-sm hidden-md hidden-lg hidden-xl text-center vcenter">
+            <address>
+              <strong>Pradeep Kumar Murukannaiah</strong><br>
+              134 Lomb Memorial Drive<br>
+              Rochester NY 14623-5608 <br>
+              <strong>pkmvse</strong> at <strong>rit</strong> dot <strong>edu</strong>
+            </address>
+          </div>
+          <div class="col-md-7 col-sm-8 vcenter">
+            <p>I am an <b>Assistant Professor</b> at Rochester Institute of Technology.</p> 
+
+            <p>The overarching theme of my research is engineering <strong>mobile</strong> and <strong>social</strong> applications. I develop computational abstractions and techniques to enable mobile social applications to deliver a <strong>personalized</strong>, <strong>context-aware</strong>, and <strong>privacy-preserving</strong> experience. My research offers benefits to both application devlopers and end-users.</p> 
+
+            <p>I recieved a PhD in Computer Science at North Carolina State University under the guidance of Professor <a href="https://www.csc.ncsu.edu/faculty/mpsingh/">Munindar P. Singh</a>. I was a Research Scientist at RIT, funded by the Dean's Postdoctoral Fellowship, working with Professor <a href="https://www.se.rit.edu/faculty-staff/naveen-sharma">Naveen Sharma</a>.</p>
+
+          </div>
+          <div class="col-md-3 hidden-sm hidden-xs text-center vcenter" style="padding-left:20px; border-left: 1px solid #ccc;">
+            <address>
+              <strong>Pradeep Kumar Murukannaiah</strong><br>
+
+              Department of Software Engineering<br>
+              Golisano Building 70, Room 1521<br><br>
+              
+              134 Lomb Memorial Drive<br>
+              Rochester NY 14623-5608 <br><br>
+
+              <strong>pkmvse</strong> at <strong>rit</strong> dot <strong>edu</strong>
+            </address>
+            <!--<h4><a href="doc/Murukannaiah-CV.pdf">Curriculum Vitae</a></h4>-->
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <div id="research" class="row">
+        <div class="col-lg-12 col-centered">
+          <br>
+          <p>I am looking for <strong>motivated students</strong> to work with me on a research topic. If you are interested in pursuing a PhD, send me an email. If you are a current RIT student, apply <a href="https://docs.google.com/forms/d/e/1FAIpQLSedU544i1aXes-nXErRt1PbPBkPcMOYzCznylq8HPktyokEaQ/viewform?usp=sf_link">here</a>.</p>
+
+          <h3>Research Overview</h3>
+          <p>I envision mobile social applications as <strong>personal agents</strong> that can act and interact on their users behalf. Engineering a personal agent is a two-fold challenge. On the one hand, we must understand how humans act and interact&mdash;a challenge centered on understanding <strong>cognition</strong>. On the other hand, we must develop automated techniques to facilitate personal agents to operate on their users' behalf&mdash;a challenge centered on understanding <strong>data</strong>.</p> 
+
+          <p><strong>Abstractions</strong>: I develop (1) high-level abstractions to represent user- and context-specific requirements, (2) techniques to learn those abstractions from data, and (3) methods to incorporate those abstractions in the development of personal agents.</p>
+
+          <p><strong>Data-driven methods</strong>: I collect data for my research from a variety of sources including social media, software repositories, crowdsourcing, and crowdsensing. I have conducted multiple user studies, demonstrating benefits of my methods to both application developers and end-users.</p>
+
+          <p><strong>Privacy</strong>: My works emphasize preserving users' privacy. I develop techniques to (1) reason about a user's personal data and (2) facilitate users to share personal data (e.g., on social media) in a privacy-preserving manner.</p>
+
+          <p>Read more about my <a href="#thrusts">research thrusts</a> below.</p>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <div class="row">
+        <div class="col-lg-12 col-centered publications">
+          <div>
+            <div class="pull-left">
+              <h3>Publications</h3>
+            </div>
+            <div class="pull-right">
+              <h4><a href="doc/Murukannaiah+ResearchStatement.pdf">Research Statement</a></p></h4>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+
+          <div class="strike">
+           <span><h4>Refereed Journal Papers</h4></span>
+         </div>
+         <div class="table-responsive">
+          <table class="table table-borderless">
+            <tr class="journal">
+              <td class="col-md-9"><a href="doc/Fogues+2017+IC+SoSharP.pdf">SoSharP: Recommending Sharing Policies in Multiuser Privacy Scenarios.</a> <br> R Fogues, PK Murukannaiah, J Such, and MP Singh. <em>IEEE Internet Computing</em>, To appear, 1–11, 2017.</td>
+              <td class="col-md-2 text-right"><strong>IC 2017</strong></td>
+              <td class="col-md-1 text-right" title="5-Year Impact Factor">2.30</td>
+            </tr>                      
+            <tr class="journal">
+              <td class="col-md-9"><a href="doc/Murukannaiah+2017+TOCHI+MultiuserPrivacy.pdf">Sharing policies in multiuser privacy scenarios: Incorporating context, preferences, and arguments in decision making.</a> <br> R Fogues, PK Murukannaiah, J Such, and MP Singh. <em>ACM Transactions on Computer-Human Interaction</em>, 24(1): 5:1-5:29, 2017.</td>
+              <td class="col-md-2 text-right"><strong>TOCHI 2017</strong></td>
+              <td class="col-md-1 text-right" title="5-Year Impact Factor">1.61</td>
+            </tr>          
+            <tr class="journal">
+              <td class="col-md-9"><a href="doc/Murukannaiah+2015+TOSEM+Platys.pdf">Platys: An active learning framework for place-aware application development and its evaluation.</a> <br>PK Murukannaiah and MP Singh. <em>ACM Transactions on Software Engineering and Methodology</em>, 24(3):1–33, 2015.</td>
+              <td class="col-md-2 text-right"><strong>TOSEM 2015</strong></td>
+              <td class="col-md-1 text-right" title="5-Year Impact Factor">1.67</td>
+            </tr>
+            <tr class="journal">
+              <td class="col-md-9"><a href="doc/Zavala+2015+AIMagazine+Platys.pdf">Platys: From position to place-oriented mobile computing.</a> <br>L Zavala, PK Murukannaiah, N Poosamani, T Finin, A Joshi, I Rhee, and MP Singh. <em>AI Magazine</em>, 36(2):50–62, 2015.</td>
+              <td class="col-md-2 text-right"><strong>AI Magazine 2015</strong></td>
+              <td class="col-md-1 text-right" title="5-Year Impact Factor">1.05</td>
+            </tr>
+            <tr class="journal">
+              <td class="col-md-9"><a href="doc/Murukannaiah+2012+IC+PlatysSocial.pdf">Platys Social: Relating shared places and private social circles.</a> <br>PK Murukannaiah and MP Singh. <em>IEEE Internet Computing</em>, 16(3):53–59, 2012.</td>
+              <td class="col-md-2 text-right"><strong>IC 2012</strong></td>
+              <td class="col-md-1 text-right" title="5-Year Impact Factor">2.50</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="strike">
+           <span><h4>Journal Columns</h4></span>
+         </div>
+         <div class="table-responsive">
+          <table class="table table-borderless">
+            <tr class="journal">
+              <td class="col-md-9"><a href="doc/Murukannaiah+2016+IC+Danio.pdf">Engineering privacy in social applications.</a> <br>PK Murukannaiah, N Ajmeri, and MP Singh. <em>IEEE Internet Computing</em>, 20(2):72–76, 2016.</td>
+              <td class="col-md-2 text-right"><strong>IC 2016</strong></td>
+              <td class="col-md-1 text-right" title="5-Year Impact Factor">2.30</td>
+            </tr>
+            <tr class="journal">
+              <td class="col-md-9"><a href="doc/Murukannaiah+2014+IC+LbUX.pdf">Understanding location-based user experience.</a> PK Murukannaiah and MP Singh. <em>IEEE Internet Computing</em>, 18(6):53–59, 2014.</td>
+              <td class="col-md-2 text-right"><strong>IC 2014</strong></td>
+              <td class="col-md-1 text-right" title="5-Year Impact Factor">2.47</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="strike">
+         <span><h4>Refereed Conference Papers</h4></span>
+       </div>
+       <div class="table-responsive">
+        <table class="table table-borderless">
+          <tr class="conference">
+            <td class="col-md-9"><a href="doc/Kanchev+2017+RE+Canary.pdf">Canary: Extracting Requirements-Related Information from Online Discussions</a>.<br>G Kanchev, PK Murukannaiah, AK Chopra, and P Sawyer. <br>In <em>Proceedings of the IEEE 25th International Requirements Engineering Conference</em>, 1–10, Lisbon, 2017.</td>
+            <td class="col-md-2 text-right"><strong>RE 2017</strong></td>
+            <td class="col-md-1 text-right" title="Acceptance Rate">35.5% [27/76]</td>
+          </tr>        
+          <tr class="conference">
+            <td class="col-md-9"><a href="doc/Ajmeri+2017+AAMAS+Arnor.pdf">Arnor: Modeling social intelligence via norms to engineer privacy-aware personal agents.</a><br>N Ajmeri, PK Murukannaiah, H Gao, and MP Singh. <br>In <em>Proceedings of the 16th International Conference on Autonomous Agents and MultiAgent Systems</em>, 1–9, S&atilde;o Paulo, Brazil, 2017.</td>
+            <td class="col-md-2 text-right"><strong>AAMAS 2017</strong></td>
+            <td class="col-md-1 text-right" title="Acceptance Rate">26.1% [155/595]</td>
+          </tr>          
+          <tr class="conference">
+            <td class="col-md-9"><a href="doc/Murukannaiah+2016+RE+CreativeCrowd.pdf">Acquiring creative requirements from the crowd: Understanding the influences of personality and creative potential in crowd RE.</a><br>PK Murukannaiah, N Ajmeri, and MP Singh. <br>In <em>Proceedings of the IEEE 24th International Requirements Engineering Conference</em>, 176–185, Beijing, 2016.</td>
+            <td class="col-md-2 text-right"><strong>RE 2016</strong></td>
+            <td class="col-md-1 text-right" title="Acceptance Rate">27.8% [22/79]</td>
+          </tr>
+          <tr class="conference">
+            <td class="col-md-9"><a href="doc/Yuan+2016+ASONAM+Percimo.pdf">Percimo: A personalized community model for location estimation in social media.</a> G Yuan, PK Murukannaiah, and MP Singh. <br>In <em>Proceedings of the IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining</em>, 271–278, San Francisco, 2016.</td>
+            <td class="col-md-2 text-right"><strong>ASONAM 2016</strong></td>
+            <td class="col-md-1 text-right" title="Acceptance Rate">13.6% [43/316]</td>
+          </tr>
+          <tr class="conference">
+            <td class="col-md-9"><a href="doc/Murukannaiah+2015+RE+ArgACH.pdf">Resolving goal conflicts via argumentation-based analysis of competing hypotheses.</a> PK Murukannaiah, AK Kalia, PR Telang, and MP Singh. In <em>Proceedings of the IEEE 23rd International Requirements Engineering Conference</em>, 156–165, Ottawa, 2015.</td>
+            <td class="col-md-2 text-right"><strong>RE 2015</strong></td>
+            <td class="col-md-1 text-right" title="Acceptance Rate">19.8% [19/96]</td>
+          </tr>
+          <tr class="conference">
+            <td class="col-md-9"><a href="doc/Kalia+2015+ICSOC+TRACE.pdf">TRACE: A dynamic model of trust for people-driven service engagements.</a> AK Kalia, PK Murukannaiah, and MP Singh.<br>In <em>Proceedings of the 13th International Conference on Service-Oriented Computing</em>, 353–361, Goa, 2015.</td>
+            <td class="col-md-2 text-right"><strong>ICSOC 2015</strong></td>
+            <td class="col-md-1 text-right" title="Acceptance Rate">24.2% [27/112]</td>
+          </tr>
+          <tr class="conference">
+            <td class="col-md-9"><a href="doc/Murukannaiah+2014+AAMAS+Xipho.pdf">Xipho: Extending Tropos to engineer context-aware personal agents.</a> PK Murukannaiah and MP Singh.<br>In <em>Proceedings of the International Conference on Autonomous Agents and MultiAgent Systems</em>, 309–316, Paris, 2015.</td>
+            <td class="col-md-2 text-right"><strong>AAMAS 2014</strong></td>
+            <td class="col-md-1 text-right" title="Acceptance Rate">23.8% [169/709]</td>
+          </tr>
+          <tr class="conference">
+            <td class="col-md-9"><a href="doc/Yuan+2014+RecSys+Sentiment.pdf">Exploiting sentiment homophily for link prediction.</a> G Yuan, PK Murukannaiah, Z Zhang, and MP Singh.<br>In <em>Proceedings of the ACM Conference on Recommender Systems</em>, 17–24, Foster City CA, 2014.</td>
+            <td class="col-md-2 text-right"><strong>RecSys 2014</strong></td>
+            <td class="col-md-1 text-right" title="Acceptance Rate">14.9% [35/234]</td>
+          </tr>
+          <tr class="conference">
+            <td class="col-md-9"><a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4725933">Structure discovery queries in disk-based Semantic Web databases.</a> K Anyanwu, PK Murukannaiah, and A Maduko.<br>In <em>Proceedings of the IEEE International Conference on Semantics, Knowledge, and Grid</em>, 336–342, Beijing, 2008.</td>
+            <td class="col-md-2 text-right"><strong>SKG 2008</strong></td>
+            <td class="col-md-1 text-right"></td>
+          </tr>
+        </table>
+      </div>
+
+       <div class="strike">
+        <span><h4>Invited Conference Papers</h4></span>
+      </div>
+      <div class="table-responsive">
+       <table class="table table-borderless">
+         <tr class="invited">
+           <td class="col-md-10"><a href="">PrIncipedia: A privacy incidents encyclopedia.</a>PK Murukannaiah, J Staddon, H Lipford, and B knijnenburg.<br><em>The 9th Annual Privacy Law Scholars Conference</em>, 2016.</td>
+           <td class="col-md-2 text-right"><strong>PLSC 2016</strong></td>
+         </tr>
+       </table>
+      </div>
+
+      <div class="strike">
+         <span><h4>Book Chapter</h4></span>
+       </div>
+       <div class="table-responsive">
+        <table class="table table-borderless">
+          <tr class="bookchapter">
+            <td class="col-md-10"><a href="">Dimensionality reduction.</a> MR Marri, L Ramachandran, PK Murukannaiah, P Ravindra, A Paul, D Young, DF Lee, S Murugappan, W Hendrix.<br>In NF Samatova, W Hendrix, J Jenkins, K Padmanabhan, A Chakraborty (Eds.), <em>Practical Graph Mining with R</em>, CRC Press, 2013.</td>
+            <td class="col-md-2 text-right"><strong>Graph Mining 2013</strong></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="strike">
+         <span><h4>Refereed Workshop, Data, Demo, Symposium, and Work in Progress Papers</h4></span>
+       </div>
+       <div class="table-responsive">
+        <table class="table table-borderless">
+          <tr class="other">
+            <td class="col-md-9"><a href="doc/Murukannaiah+2017+REData+CrowdRE.pdf">Toward Automating Crowd RE.</a> PK Murukannaiah, N Ajmeri, and MP Singh. <br> In <em>Proceedings of the IEEE 25th International Requirements Engineering Conference (Data Track)</em>, 1–4, Lisobon. 2017.</td>
+            <td class="col-md-2 text-right"><strong>RE 2017</strong></td>
+          </tr>                
+          <tr class="other">
+            <td class="col-md-9"><a href="doc/Munaiah+2017+REData+SecurityRequirements.pdf">A Domain-Independent Model for Identifying Security Requirements.</a> N Munaiah, A Meneely, and PK Murukannaiah. <br> In <em>Proceedings of the IEEE 25th International Requirements Engineering Conference (Data Track)</em>, 1–6, Lisobon. 2017.</td>
+            <td class="col-md-2 text-right"><strong>RE 2017</strong></td>
+          </tr>                
+          <tr class="other">
+            <td class="col-md-9"><a href="doc/Kanchev+2017+REDemo+Canary.pdf">Canary: An Interactive and Query-Based Approach to Extract Requirements from Online Forums.</a> G Kanchev, PK Murukannaiah, AK Chopra, and P Sawyer. <br> In <em>Proceedings of the IEEE 25th International Requirements Engineering Conference (Demonstration)</em>, 1–4, Lisobon. 2017.</td>
+            <td class="col-md-2 text-right"><strong>RE 2017</strong></td>
+          </tr>                
+          <tr class="other">
+            <td class="col-md-9"><a href="doc/Murukannaiah+2017+HoTSoS+PrivacyIncidentsDB.pdf">Learning a privacy incidents database.</a> PK Murukannaiah, C Dabral, K Sheshadri, E Sharma, and J Staddon. <br> In <em>Proceedings of the Symposium and Bootcamp on Hot Topics in Science of Security</em>, 1–10, Hanover, MD. 2017.</td>
+            <td class="col-md-2 text-right"><strong>HoTSoS 2017</strong></td>
+            <!--<td class="col-md-1 text-right" title="Acceptance Rate">18.9% [11/58]</td>-->        
+          </tr>  
+          <tr class="other">
+            <td class="col-md-9"><a href="doc/Murukannaiah+2017+USEC+PrivacyIncidents.pdf">(Work in Progress) Is this a privacy incident? Using news exemplars to study end user perceptions of privacy incidents.</a><br>PK Murukannaiah, J Staddon, H Lipford, and B knijnenburg. In <em>Proceedings of the Workshop on Usable Security</em>, 1–7, San Diego, 2017.</td>
+            <td class="col-md-2 text-right"><strong>USEC 2017</strong></td>
+            <!--<td class="col-md-1 text-right" title="Acceptance Rate">18.9% [11/58]</td>-->
+          </tr>        
+          <tr class="other">
+            <td class="col-md-10"><a href="doc/Fogues+2015+ACySe+Privacy.pdf">Argumentation for multi-party privacy management (Position paper).</a> R Fogues, PK Murukannaiah, JM Such, A Espinosa, A Garcia-Fornes, and MP Singh. <em>International Workshop on Agents and CyberSecurity</em>, 2015.</td>
+            <td class="col-md-2 text-right"><strong>ACySe 2015</strong></td>
+          </tr>
+          <tr class="other">
+            <td class="col-md-10"><a href="doc/Murukannaiah+2014+AAMAS+DC.pdf">Reasoning about context and engineering context-aware agents (Doctoral Consortium).</a> PK Murukannaiah.<br>In <em>Proceedings of the International Conference on Autonomous Agents and MultiAgent Systems</em>, 1733–1734, 2014</td>
+            <td class="col-md-2 text-right"><strong>AAMAS 2014</strong></td>
+          </tr>
+          <tr class="other">
+            <td class="col-md-10"><a href="doc/Murukannaiah+2014+AAMAS+XiphoDemo.pdf">Platys: A framework for supporting context-aware personal agents (Demonstration).</a> PK Murukannaiah, R Fogues, and MP Singh.<br>In <em>Proceedings of the International Conference on Autonomous Agents and MultiAgent Systems</em>, 1689–1690, 2014.</td>
+            <td class="col-md-2 text-right"><strong>AAMAS 2014</strong></td>
+          </tr>
+          <tr class="other">
+            <td class="col-md-10"><a href="doc/Hang+2013+AAAIWS+Platys.pdf">Platys: User-Centric Place Recognition.</a> C-W Hang, PK Murukannaiah, and MP Singh.<br><em>AAAI Workshop on Activity Context-Aware System Architectures</em>, 2013</td>
+            <td class="col-md-2 text-right"><strong>AAAI WS 2013</strong></td>
+          </tr>
+          <!--<tr class="bookchapter">
+            <td class="col-md-10"><a href=""></a><br><em></em></td>
+            <td class="col-md-2 text-right"><strong></strong></td>
+          </tr>-->
+        </table>
+      </div>
+
+      <div class="strike">
+         <span><h4>Dissertation</h4></span>
+       </div>
+       <div class="table-responsive">
+        <table class="table table-borderless">
+          <tr class="dissertation">
+            <td class="col-md-10"><a href="doc/Murukannaiah+2016+NCSU+Dissertation.pdf">Engineering personal agents: Toward personalized, context-aware, and privacy-preserving applications.</a> <br>PK Murukannaiah. <em>North Carolina State University</em>, 2016.</td>
+            <td class="col-md-2 text-right"><strong>NCSU 2016</strong></td>
+          </tr>
+        </table>
+       </div>
+
+
+        <!--<section class='footnote' id='pub-footnote'>
+        <ul>
+          <li>The 5-year journal impact factors reported above are for the year the arcticle was published or the year before</li>
+        </ul>
+        </section>-->
+
+    </div>
+  </div>
+  <!-- /.row -->
+
+    <div id="thrusts" class="row">
+      <div class="col-lg-12 col-centered">
+        <h3>Research Thrusts</h3>
+        Engineering mobile social applications is not a unitary challenge. I seek to address these challenges on multiple fronts. The following is rough categorization of my efforts.
+
+        <div class="strike">
+          <span><h4>Requirements Engineering</h4></span>
+        <p><b>Keywords:</b> <i>Crowd-based RE, creativity, human factors, team work, goal modeling, argumentation, RE at runtime</i></p>
+        <ul>
+          <li>Requirements for the masses, from the masses</li>
+          <li>Facilitating creativity in RE</li>
+          <li>Goal modeling and goal conflict analysis</li>
+        </ul>
+        </div>
+
+        <div class="strike">
+          <span><h4>Self-Adaptive Systems</h4></span>
+
+        <p><b>Keywords:</b> <i>Agents, modeling, context-awareness, middleware, machine learning, sensors, Internet of things</i></p>
+        <ul>
+          <li>Methodology and middleware for engineering self-adaptive applications</li>
+          <li>Machine learning from sensor data</li>
+          <li>Bridging data and requirements</li>
+        </ul>
+        </div>
+
+        <div class="strike">
+          <span><h4>Sociotechnical Systems</h4></span>
+        <p><b>Keywords:</b> <i>Multiagent systems, social media analysis, geo-social, social norms, argumentation</i></p>
+        <ul>
+          <li>Understanding norms and engineering normative systems</li>
+          <li>Machine learning social context from weblogs, social media, and sensor data</li>
+        </ul>
+        </div>
+
+        <div class="strike">
+          <span><h4>Privacy</h4></span>
+        <p><b>Keywords:</b> <i>Multiuser privacy, usable privacy, privacy incidents, social norms, personal data</i></p>
+        <ul>
+          <li>Reasoning about privacy in social settings</li>
+          <li>Understanding privacy perceptions via crowdsourcing</li>
+          <li>Automated techniques for curating a privacy incidents database</li>
+        </ul>
+        </div>
+
+      </div>
+    </div>
+  <!-- /.row -->
+
+  <div id="awards" class="row">
+    <div class="col-lg-12 col-centered">
+      <h3>Awards and Recognitions</h3>
+      <ul>
+        <li><strong>2016 Outstanding Research Award</strong>, Department of Computer Science, North Carolina State University</li>
+
+        <li><strong>NCSU CS Departmental Nominee</strong>, 2016 CGS/ProQuest Distinguished Dissertation Award</li>
+
+        <li><strong>Dean's Postdoctoral Fellowship</strong>, Rochester Institute of Technology</li>
+      </ul>
+    </div>
+  </div>
+  <!-- /.row -->
+  
+  <div id="teaching" class="row">
+    <div class="col-lg-12 col-centered">
+          <!--<div class="row">
+            <div class="col-xs-6 text-left">
+              <h3>Teaching</h3>
+            </div>
+            <div class="col-xs-6 text-right">
+            <h4><a href="">Teaching Statement</a></h4>
+            </div>
+          </div>-->
+          <div>
+            <div class="pull-left">
+              <h3>Teaching and Mentoring</h3>
+            </div>
+            <div class="pull-right">
+              <h4><a href="doc/Murukannaiah+TeachingStatement.pdf">Teaching Statement</a></p></h4>
+            </div>
+            <div class="clearfix"></div>
+          </div>
+          <div class="table-responsive">
+            <h4 style="display:inline-block">Teaching Assistant</h4>, Department of Computer Science, North Carolina State University
+            <ul>
+              <li>Service-Oriented Computing (<a href="https://www.csc.ncsu.edu/faculty/mpsingh/local/SOC/">CSC 450/CSC 750</a>): 2011, 2012, 2013, 2015</li>
+              <li>Graph Theory (<a href="https://courses.ncsu.edu/csc565/">CSC 565</a>): 2010</li>
+            </ul>
+
+            <h4 style="display:inline-block">Term-Project Mentor</h4>, Department of Computer Science, North Carolina State University
+            <ul>
+              <li>Social Computing (<a href="https://www.csc.ncsu.edu/faculty/mpsingh/local/Social/">CSC 591/CSC 791</a>): 2014, 2015</li>
+            </ul>
+            <!--<h4 style="display:inline-block">PhD Student Mentor</h4>, Department of Software Engineering, Rochester Institute of Technology
+            <ul>
+              <li><a href="mailto:mf3791@g.rit.edu">Muhammad Fazalul Rahman</a></li>
+            </ul>-->
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <div id="service" class="row">
+        <div class="col-lg-12 col-centered">
+          <h3>Professional Activities</h3>
+          <h4 style="display:inline-block">PhD Symposium Co-Chair</h4>, <a href="http://iccac2016.se.rit.edu/Doctoral.html">Doctoral Symposium on Foundations and Applications of Self-&#42; Systems (FAS&#42;)</a>: 2016<br>
+
+          <h4 style="display:inline-block">Information Director</h4>, <a href="http://toit.acm.org/editorial.cfm">ACM Transactions on Internet Technology</a>: 2013--2016<br>
+
+          <h4 style="display:inline-block">Program Committee</h4>
+          <ul>
+            <li><a href="http://iccac2016.se.rit.edu/Organization.html">IEEE International Conference on Distributed Computing  Systems (ICDCS), Social  Networks  and Crowdsourcing Track</a>: 2016</li>     
+            <li><a href="http://iccac2016.se.rit.edu/Organization.html">International Conference onEvaluation of Novel Approaches to Software Engineering (ENASE)</a>: 2016</li>     
+            <li><a href="http://iccac2016.se.rit.edu/Organization.html">IEEE International Conference on Cloud and Autonomic Computing (ICCAC)</a>: 2016</li>
+            <li><a href="http://www.themobileservices.org/2016/organization.html">IEEE International Conference on Mobile Services (MS)</a>: 2013, 2015, 2016</li>
+            <li><a href="http://www.lancaster.ac.uk/staff/chopraak/mfsc-2015/index.html">International Workshop on Multiagent Foundations of Social Computing</a>: 2014, 2015</li>
+            <li><a href="">International Conference on Emerging Ubiquitous Systems and Pervasive Networks (EUSPN)</a>: 2015</li>
+          </ul>
+
+          <h4 style="display:inline-block">Conference External Reviewer</h4>
+          <ul>
+            <li><a href="https://chi2017.acm.org/">ACM CHI Conference on Human Factors in Computing Systems (CHI)</a>: 2017</li>
+            <li><a href="https://www.usenix.org/conference/soups2016">Twelfth Symposium on Usable Privacy and Security (SOUPS)</a>: 2016</li>
+            <li><a href="http://www.aaai.org/Conferences/AAAI/aaai12.php">AAAI Conference on Artificial Intelligence (AAAI)</a>: 2012, 2017</li>
+          </ul>
+
+          <h4 style="display:inline-block">Journal Reviewer</h4>
+          <ul>
+            <li><a href="http://www.journals.elsevier.com/journal-of-systems-and-software/">Journal of Systems and Software (JSS)</a>: 2016</li>
+            <li><a href="https://www.asist.org/publications/jasist/">Journal of the Association for Information Science and Technology (JASIST)</a>: 2016</li>
+            <li><a href="http://toit.acm.org/">ACM Transactions on Internet Technology (ToIT)</a>: 2016</li>
+            <li><a href="http://www.springer.com/computer/swe/journal/10664">Empirical Software Engineering (EmSE)</a>: 2015
+            </li>
+            <li><a href="https://www.computer.org/web/computingnow/internetcomputing">IEEE Internet Computing (IC)</a>: 2011, 2013, 2015</li>
+            <li><a href="http://tist.acm.org/">ACM Transactions on Intelligent Systems and Technology (TIST)</a>: 2013, 2014, 2015</li>
+            <li><a href="https://www.computer.org/web/tsc">IEEE Transactions on Services Computing (TSC)</a>: 2014, 2015, 2016</li>
+          </ul>
+
+          <h4 style="display:inline-block">Journal Co-Reviewer</h4>
+          <ul>
+            <li><a href="https://www.computer.org/web/tse">IEEE Transactions on Software Engineering (TSE)</a>: 2016</li>
+          </ul>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <br>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+  </body>
+
+  </html>
