@@ -10,7 +10,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Pradeep Murukannaiah, Assistant Professor, Department of Software Engineering, Rochester Institute of Technology"/>
-  <meta name="keywords" content="Pradeep Murukannaiah, Pradeep Kumar, Pradeep, Murukanaiah, pradeepmcl, pmuruka, pkm, pkmvse, pkmurukannaiah, tu delft, rit, rochester institute of technology, ncsu, north carolina state university"/>
+  <meta name="keywords" content="Pradeep Murukannaiah, Pradeep Kumar, Pradeep, Murukanaiah, pradeepmcl, pmuruka, pkm, pkmvse, rit, rochester institute of technology, ncsu, north carolina state university"/>
   <meta name="author" content="Pradeep Murukannaiah"/>
 
   <title>Pradeep Kumar Murukannaiah</title>
@@ -19,7 +19,65 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom CSS -->
-  <link href="css/index-style.css" rel="stylesheet">
+  <style>
+    body {
+      padding-top: 70px;
+      /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+    .col-centered {
+      float: none;
+      margin: 0 auto;
+    }
+    .vcenter {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    div.row {
+      border-bottom: 1px solid #ccc;
+    }
+    .strike {
+      display: block;
+      text-align: left;
+      overflow: hidden;
+      white-space: nowrap; 
+    }
+    .strike > span {
+      position: relative;
+      display: inline-block;
+    }
+    .strike > span:before,
+    .strike > span:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 9999px;
+      height: 1px;
+      background: #ccc;
+    }
+    .strike > span:before {
+      right: 100%;
+      margin-right: 15px;
+    }
+    .strike > span:after {
+      left: 100%;
+      margin-left: 15px;
+    }
+    .table-borderless tbody tr td, .table-borderless tbody tr th, .table-borderless thead tr th {
+      border: none;
+    }
+    a-plain {
+      text-decoration: none;
+    }
+    h1 {
+      .strike;
+      font-size: 24px;
+      text-align: center;
+    }
+    .scrollit {
+      height: 330px;
+      overflow-y:scroll; 
+    }    
+  </style>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -62,17 +120,47 @@
       }
     </script>
 
-    <script>
-    	$(function() {
-    		$("#navbar").load("navbar.html"); 
-    	});
-    </script>
   </head>
 
   <body>
 
-    <div id="navbar"></div>
-  
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Pradeep Kumar Murukannaiah</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li>
+              <a href="index.html">Research</a>
+            </li>
+            <li>
+              <a href="teaching.html">Teaching</a>
+            </li>
+            <li>
+              <a href="service.html">Service</a>
+            </li>
+            <li class="hidden-xl hidden-lg hidden-md">
+              <a href="doc/Murukannaiah-CV.pdf">CV</a>
+            <li class="hidden-xl hidden-lg hidden-md hidden-xs">
+              <a href="mailto:pkmvse at rit dot edu">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </nav>
+
     <!-- Page Content -->
     <div class="container">
       <div class="row">
@@ -113,7 +201,16 @@
 
           </div>
           <div class="col-md-3 hidden-sm hidden-xs vcenter scrollit" style="padding-left:20px; border-left: 1px solid #ccc;">
-            <a href="doc/Murukannaiah-CV.pdf">Curriculum Vitae</a></h4>
+            <h4 class="text-center">Recent News</h4>
+            <ul>
+              <li><strong>Keynote</strong> at <a href="https://www.ucalgary.ca/pst2017/program">PST 2017</a> on <a href="doc/Murukannaiah-Privacy-Analytics.pdf">Privacy Analytics</a> (Aug 2017)</li>
+              <li>Teaching <a href="http://www.se.rit.edu/~swen-331/">Engineering Secure Software</a> in Fall (Aug 2017)</li>
+              <li>2017 Computer Science <strong>Outstanding Dissertation</strong> Award (Apr 2017)</li>
+              <li>Developing and teaching a course on <a href="http://www.se.rit.edu/~swen-789/01/index.html">Data Science for SE</a> in Spring (Jan 2017)</li>
+              <li>Co-chairing Doctoral Symposium on <a href="https://saso2016.informatik.uni-augsburg.de/call_for_ds.html">Foundations and Applications of Self-* Systems</a> (Sep 2016)</li>
+              <li>2016 Computer Science <strong>Outstanding Research</strong> Award (Apr 2016)</li>
+            </ul>
+            <!--<h4><a href="doc/Murukannaiah-CV.pdf">Curriculum Vitae</a></h4>-->
           </div>
         </div>
       </div>

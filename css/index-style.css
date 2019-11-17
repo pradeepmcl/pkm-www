@@ -1,0 +1,57 @@
+body {
+  padding-top: 70px;
+  /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+}
+div.row {
+  border-bottom: 1px solid #ccc;
+}
+.strike {
+  display: block;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap; 
+}
+.strike > span {
+  position: relative;
+  display: inline-block;
+}
+.strike > span:before,
+.strike > span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 9999px;
+  height: 1px;
+  background: #ccc;
+}
+.strike > span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.strike > span:after {
+  left: 100%;
+  margin-left: 15px;
+}
+.table-borderless tbody tr td, .table-borderless tbody tr th, .table-borderless thead tr th {
+  border: none;
+}
+a-plain {
+  text-decoration: none;
+}
+h1 {
+  .strike;
+  font-size: 24px;
+  text-align: center;
+}
+.scrollit {
+  height: 330px;
+  overflow-y:scroll; 
+} 
