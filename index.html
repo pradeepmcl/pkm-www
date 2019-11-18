@@ -10,7 +10,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Pradeep Murukannaiah, Assistant Professor, Department of Software Engineering, Rochester Institute of Technology"/>
-  <meta name="keywords" content="Pradeep Murukannaiah, Pradeep Kumar, Pradeep, Murukanaiah, pradeepmcl, pmuruka, pkm, pkmvse, rit, rochester institute of technology, ncsu, north carolina state university"/>
+  <meta name="keywords" content="Pradeep Murukannaiah, Pradeep Kumar, Pradeep, Murukanaiah, pradeepmcl, pmuruka, pkm, pkmvse, pkmurukannaiah, tu delft, rit, rochester institute of technology, ncsu, north carolina state university"/>
   <meta name="author" content="Pradeep Murukannaiah"/>
 
   <title>Pradeep Kumar Murukannaiah</title>
@@ -19,65 +19,7 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom CSS -->
-  <style>
-    body {
-      padding-top: 70px;
-      /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    }
-    .col-centered {
-      float: none;
-      margin: 0 auto;
-    }
-    .vcenter {
-      display: inline-block;
-      vertical-align: middle;
-    }
-    div.row {
-      border-bottom: 1px solid #ccc;
-    }
-    .strike {
-      display: block;
-      text-align: left;
-      overflow: hidden;
-      white-space: nowrap; 
-    }
-    .strike > span {
-      position: relative;
-      display: inline-block;
-    }
-    .strike > span:before,
-    .strike > span:after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      width: 9999px;
-      height: 1px;
-      background: #ccc;
-    }
-    .strike > span:before {
-      right: 100%;
-      margin-right: 15px;
-    }
-    .strike > span:after {
-      left: 100%;
-      margin-left: 15px;
-    }
-    .table-borderless tbody tr td, .table-borderless tbody tr th, .table-borderless thead tr th {
-      border: none;
-    }
-    a-plain {
-      text-decoration: none;
-    }
-    h1 {
-      .strike;
-      font-size: 24px;
-      text-align: center;
-    }
-    .scrollit {
-      height: 330px;
-      overflow-y:scroll; 
-    }    
-  </style>
+  <link href="css/index-style.css" rel="stylesheet">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -120,47 +62,17 @@
       }
     </script>
 
+    <script>
+    	$(function() {
+    		$("#navbar").load("navbar.html"); 
+    	});
+    </script>
   </head>
 
   <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">Pradeep Kumar Murukannaiah</a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li>
-              <a href="index.html">Research</a>
-            </li>
-            <li>
-              <a href="teaching.html">Teaching</a>
-            </li>
-            <li>
-              <a href="service.html">Service</a>
-            </li>
-            <li class="hidden-xl hidden-lg hidden-md">
-              <a href="doc/Murukannaiah-CV.pdf">CV</a>
-            <li class="hidden-xl hidden-lg hidden-md hidden-xs">
-              <a href="mailto:pkmvse at rit dot edu">Contact</a>
-            </li>
-          </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-      </div>
-      <!-- /.container -->
-    </nav>
-
+    <div id="navbar"></div>
+  
     <!-- Page Content -->
     <div class="container">
       <div class="row">
@@ -169,49 +81,42 @@
             <div class="thumbnail">
               <img src="pic/PKM-1-Small.png" alt="Pradeep Murukannaiah's picture">            
             </div>
-            <address>
-              134 Lomb Memorial Dr.<br>
-              Software Engineering, GCCIS, Room 70-1521
-              Rochester NY 14623<br><br>
-              <strong>pkmvse</strong> at <strong>rit</strong> dot <strong>edu</strong>
-            </address>            
           </div>
-          <!--<div class="col-xs-7 hidden-sm hidden-md hidden-lg hidden-xl text-center vcenter">
-            <address>
-              <strong>Pradeep Kumar Murukannaiah</strong><br>
-              134 Lomb Memorial Drive<br>
-              Rochester NY 14623-5608 <br>
-              <strong>pkmvse</strong> at <strong>rit</strong> dot <strong>edu</strong>
-            </address>
-          </div>-->
-          <div class="col-md-7 col-sm-8 vcenter">
-            <p>I am an <b>Assistant Professor</b> in <a href="http://www.se.rit.edu/">Software Engineering</a> and an affiliated factulty of the <a href="https://www.rit.edu/cybersecurity/">Center for Cybersecurity</a> at Rochester Institute of Technology (RIT). Prior to this, I have been a Research Scientist at RIT, intern at Google, and Software Engineer at Alcatel-Lucent.</p>
+          <div class="col-md-7 col-sm-8">
+            <p>I am an <b>Assistant Professor</b> in the <a href="https://www.tudelft.nl/ewi/over-de-faculteit/afdelingen/intelligent-systems/interactive-intelligence/">Interactive Intelligence</a> group, Faculty of Electrical Engineering, Mathematics, and Computer Science (EEMCS), at the Delft University of Technology (TU Delft).</p> 
+
+            <p>Prior to TU Delft, I was an Assistant Professor in the <a href="http://www.se.rit.edu/">Software Engineering</a> department and affiliated factulty of the <a href="https://www.rit.edu/cybersecurity/">Center for Cybersecurity</a> at Rochester Institute of Technology (RIT). In addition, I have been an intern at Google, and Software Engineer at Alcatel-Lucent.</p>
 
             <p>I recieved a PhD in Computer Science in 2016 under the guidance of Professor <a href="https://www.csc.ncsu.edu/faculty/mpsingh/">Munindar P. Singh</a> and an MS in Computer Science in 2012, both, from North Carolina State University.</p>            
-
-            <p>The overarching theme of my research is engineering <strong>social</strong> applications. I develop computational abstractions and techniques to enable social applications to deliver a <strong>personalized</strong>, <strong>context-aware</strong>, and <strong>privacy-preserving</strong> experience, offering benefits to both application devlopers and end-users.</p> 
-
-            <p>Engineering social applications is not a unitary challenge. My works on addressing these challenges span three (overlapping) themes.</p>
-
-            <ul>
-              <li><strong>Software engineering</strong>: requirements, agent-oriented, context-aware (mobile and social) apps</li>
-              <li><strong>Privacy and security</strong>: multiuser privacy, cyber analytics, software security</li>
-              <li><strong>Social computing</strong>: multiagent systems, social norms, trust, social network and content analysis, crowdsourcing, human factors (e.g., personality and creativity)</li>
-            </ul>
-
           </div>
-          <div class="col-md-3 hidden-sm hidden-xs vcenter scrollit" style="padding-left:20px; border-left: 1px solid #ccc;">
-            <h4 class="text-center">Recent News</h4>
-            <ul>
-              <li><strong>Keynote</strong> at <a href="https://www.ucalgary.ca/pst2017/program">PST 2017</a> on <a href="doc/Murukannaiah-Privacy-Analytics.pdf">Privacy Analytics</a> (Aug 2017)</li>
-              <li>Teaching <a href="http://www.se.rit.edu/~swen-331/">Engineering Secure Software</a> in Fall (Aug 2017)</li>
-              <li>2017 Computer Science <strong>Outstanding Dissertation</strong> Award (Apr 2017)</li>
-              <li>Developing and teaching a course on <a href="http://www.se.rit.edu/~swen-789/01/index.html">Data Science for SE</a> in Spring (Jan 2017)</li>
-              <li>Co-chairing Doctoral Symposium on <a href="https://saso2016.informatik.uni-augsburg.de/call_for_ds.html">Foundations and Applications of Self-* Systems</a> (Sep 2016)</li>
-              <li>2016 Computer Science <strong>Outstanding Research</strong> Award (Apr 2016)</li>
-            </ul>
-            <!--<h4><a href="doc/Murukannaiah-CV.pdf">Curriculum Vitae</a></h4>-->
-          </div>
+          <div class="col-md-3 hidden-sm hidden-xs vcenter" style="padding-left:20px; border-left: 1px solid #ccc;">
+            <strong>Pradeep Kumar Murukannaiah</strong><br>
+            <address>
+              Van Mourik Broekmanweg 6<br>
+              2628 XE Delft, The Netherlands<br>
+              Room W6.680<br><br>
+              <strong>p.k.murukannaiah</strong> at <strong>tudelft</strong> dot <strong>nl</strong>
+            </address>
+            <p>
+            <a href="https://www.linkedin.com/in/pradeep-kumar-murukannaiah-99278bb" target="_blank" title="Pradeep K. Murukannaiah | LinkedIn"><img src="./img/linkedin-icon.png" style="height: 24px;"/></a> &nbsp;
+            <a href="https://dblp.org/pers/hd/m/Murukannaiah:Pradeep_K=" target="_blank" title="dblp: Pradeep K. Murukannaiah"><img src="./img/dblp-logo.png" style="height: 24px;"/></a> &nbsp;
+            <a href="https://scholar.google.com/citations?user=zezL27wAAAAJ&hl=en" target="_blank" title="Pradeep K. Murukannaiah - Google Scholar Citations"><img src="./img/google_scholar.png" style="height: 24px;"/></a> &nbsp;
+            <a href="https://github.com/pradeepmcl/" target="_blank" title="Pradeep K. Murukannaiah | GitHub"><img src="./img/github.png" style="height: 24px;"/></a> &nbsp;
+            <a href="doc/Murukannaiah-CV.pdf" target="_blank"><img src="./img/cv-pdf.png"  title="Pradeep K. Murukannaiah | CV" style="height:24px;"/></a><br/></p>
+          </div>          
+        </div>
+      </div>
+      <!-- /.row -->
+      <div class="row">
+        <br>
+        <div class="col-lg-12 col-centered">
+          <p><b>Engineering socially intelligent agents</b> is the overarching theme of my research. I envision intelligent systems that support rich interactions between humans and computational agents, enabling a variety of individual and societal applications. I seek to (1) formulate <em>cognitive</em> abstractions (e.g., goals, context, norms, and values) and <em>computational</em> methodologies for systematically engineering intelligent systems; and (2) develop <em>data-driven methods</em> for supporting decision making by intelligent agents and for analyzing the rich data they produce. My works seek to address research challenges span three (overlapping) themes.</p>
+
+          <ul>
+            <li><strong>Sociotechnical systems</strong>: multiagent systems, norms, negotiation, trust, social network analysis, crowdsourcing.</li>              
+            <li><strong>Software engineering</strong>: requirements, agent-oriented, context-aware (mobile and social) apps.</li>
+            <li><strong>Privacy and security</strong>: multiuser privacy, cyber analytics, software security.</li>
+          </ul>
         </div>
       </div>
       <!-- /.row -->
